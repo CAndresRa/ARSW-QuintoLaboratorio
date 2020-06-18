@@ -1,4 +1,5 @@
 package edu.escuelaing.arsw.picayfama;
+import edu.escuelaing.arsw.picayfama.services.PicaFamasService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

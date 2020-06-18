@@ -1,4 +1,6 @@
-package edu.escuelaing.arsw.picayfama;
+package edu.escuelaing.arsw.picayfama.controller;
+import edu.escuelaing.arsw.picayfama.services.IPicaFamaService;
+import edu.escuelaing.arsw.picayfama.services.PicaFamasService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 @RestController

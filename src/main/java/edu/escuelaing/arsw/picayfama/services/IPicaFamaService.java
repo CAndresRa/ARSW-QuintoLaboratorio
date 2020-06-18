@@ -1,4 +1,4 @@
-package edu.escuelaing.arsw.picayfama;
+package edu.escuelaing.arsw.picayfama.services;
 
 
 public interface IPicaFamaService {
