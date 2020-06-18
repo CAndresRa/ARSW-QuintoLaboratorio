@@ -1,19 +1,19 @@
-package edu.escuelaing.arsw.picayfamas;
-
-import edu.escuelaing.arsw.picayfamas.services.PicaFamasService;
+package edu.escuelaing.arsw.picayfama;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import sun.jvm.hotspot.utilities.Assert;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 class PicayfamasApplicationTests {
+
 
     @Test
     void shouldAllBeFamas() {
         PicaFamasService picaFamasService = new PicaFamasService();
         picaFamasService.setNumberRamdom("12345678");
         picaFamasService.validar("12345678");
-        Assert.that(picaFamasService.getCounterFamas() == 8, "");
+        assertThat(picaFamasService.getCounterFamas()).isEqualTo(8);
     }
 
     @Test
@@ -21,7 +21,7 @@ class PicayfamasApplicationTests {
         PicaFamasService picaFamasService = new PicaFamasService();
         picaFamasService.setNumberRamdom("12345678");
         picaFamasService.validar("17654321");
-        Assert.that(picaFamasService.getCounterFamas() == 1, "");
+        assertThat(picaFamasService.getCounterFamas()).isEqualTo(1);
     }
 
     @Test
@@ -29,7 +29,7 @@ class PicayfamasApplicationTests {
         PicaFamasService picaFamasService = new PicaFamasService();
         picaFamasService.setNumberRamdom("12345678");
         picaFamasService.validar("12345687");
-        Assert.that(picaFamasService.getCounterPicas() == 2, "");
+        assertThat(picaFamasService.getCounterPicas()).isEqualTo(2);
     }
 
     @Test
@@ -37,7 +37,7 @@ class PicayfamasApplicationTests {
         PicaFamasService picaFamasService = new PicaFamasService();
         picaFamasService.setNumberRamdom("12345678");
         picaFamasService.validar("12345678");
-        Assert.that(picaFamasService.getCounterPicas() == 0, "");
+        assertThat(picaFamasService.getCounterPicas()).isEqualTo(0);
     }
 
     @Test
@@ -45,7 +45,7 @@ class PicayfamasApplicationTests {
         PicaFamasService picaFamasService = new PicaFamasService();
         picaFamasService.setNumberRamdom("12345678");
         picaFamasService.validar("21111111");
-        Assert.that(picaFamasService.getCounterFamas() == 0, "");
+        assertThat(picaFamasService.getCounterFamas()).isEqualTo(0);
     }
 
     @Test
@@ -53,7 +53,7 @@ class PicayfamasApplicationTests {
         PicaFamasService picaFamasService = new PicaFamasService();
         picaFamasService.setNumberRamdom("12345678");
         picaFamasService.validar("12345687");
-        Assert.that(picaFamasService.getCounterFamas() == 6, "");
+        assertThat(picaFamasService.getCounterFamas()).isEqualTo(6);
     }
 
     @Test
@@ -61,7 +61,7 @@ class PicayfamasApplicationTests {
         PicaFamasService picaFamasService = new PicaFamasService();
         picaFamasService.setNumberRamdom("12345678");
         picaFamasService.validar("21345678");
-        Assert.that(picaFamasService.getCounterPicas() == 2, "");
+        assertThat(picaFamasService.getCounterPicas()).isEqualTo(2);
     }
 
     @Test
@@ -69,7 +69,7 @@ class PicayfamasApplicationTests {
         PicaFamasService picaFamasService = new PicaFamasService();
         picaFamasService.setNumberRamdom("12345678");
         picaFamasService.validar("87654300");
-        Assert.that(picaFamasService.getCounterPicas() == 6, "");
+        assertThat(picaFamasService.getCounterPicas()).isEqualTo(6);
     }
 
 }

@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>edu.escuelaing.arsw</groupId>
-    <artifactId>picayfamas</artifactId>
+    <artifactId>picayfama</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>picayfamas</name>
+    <name>picayfama</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

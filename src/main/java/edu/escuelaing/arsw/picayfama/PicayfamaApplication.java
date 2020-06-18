@@ -1,13 +1,13 @@
-package edu.escuelaing.arsw.picayfamas;
+package edu.escuelaing.arsw.picayfama;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PicayfamasApplication {
+public class PicayfamaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(PicayfamasApplication.class, args);
+        SpringApplication.run(PicayfamaApplication.class, args);
     }
 
 }

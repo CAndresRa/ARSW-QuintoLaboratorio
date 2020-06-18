@@ -1,13 +1,11 @@
-package edu.escuelaing.arsw.picayfamas.controller;
-
-import edu.escuelaing.arsw.picayfamas.services.PicaFamasService;
+package edu.escuelaing.arsw.picayfama;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-public class PicaFamasController {
+public class PicaFamaController {
     @Autowired
     PicaFamasService picaFamasService;
 
@@ -29,3 +27,4 @@ public class PicaFamasController {
         picaFamasService = new PicaFamasService();
     }
 }
+

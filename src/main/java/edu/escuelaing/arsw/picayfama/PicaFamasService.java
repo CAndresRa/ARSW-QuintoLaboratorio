@@ -1,9 +1,8 @@
-package edu.escuelaing.arsw.picayfamas.services;
 
+package edu.escuelaing.arsw.picayfama;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
-
 
 @Service
 public class PicaFamasService {
