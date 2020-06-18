@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class PicaFamasService {
+public class PicaFamasService implements IPicaFamaService {
     private String numberRamdom;
     private List<String> attemptsMade;
     private int counterFamas;
@@ -76,9 +76,6 @@ public class PicaFamasService {
         return listNumber;
     }
 
-    public String getNumberRamdom() {
-        return numberRamdom;
-    }
 
     public void setNumberRamdom(String numberRamdom) {
         this.numberRamdom = numberRamdom;
@@ -88,15 +85,8 @@ public class PicaFamasService {
         return counterFamas;
     }
 
-    public void setCounterFamas(int counterFamas) {
-        this.counterFamas = counterFamas;
-    }
-
     public int getCounterPicas() {
         return counterPicas;
     }
 
-    public void setCounterPicas(int counterPicas) {
-        this.counterPicas = counterPicas;
-    }
 }

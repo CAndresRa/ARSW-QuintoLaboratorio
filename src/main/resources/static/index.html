@@ -26,14 +26,14 @@
     function myFunction() {
         var x = document.getElementById("inputText").value;
         console.log(x);
-        $.get("http://localhost:8080/api/adivinar/" + x, function(data) {
+        $.get("https://famasypicas.herokuapp.com/api/adivinar/" + x, function(data) {
             console.log(data);
             document.getElementById("result").innerHTML = data;
         });
     }
 
     function restart() {
-        $.get("http://localhost:8080/api/adivinar", function() {
+        $.get("https://famasypicas.herokuapp.com/api/adivinar", function() {
             document.getElementById("inputText").value = "";
             var resultado = document.getElementById("result");
             resultado.textContent = "Resultado: ";

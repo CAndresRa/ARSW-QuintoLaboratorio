@@ -1,13 +1,12 @@
 package edu.escuelaing.arsw.picayfama;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 @RestController
 @RequestMapping("/api")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class PicaFamaController {
     @Autowired
-    PicaFamasService picaFamasService;
+    IPicaFamaService picaFamasService;
 
     @CrossOrigin(origins = "*", allowedHeaders = "*")
     @GetMapping ("/ramdom")
